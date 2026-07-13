@@ -1,6 +1,6 @@
 # 剧本资产表生成 Skill
 
-> 🎬 一键将剧本解析为结构化资产表 | 自动生成带状态追踪和颜色标记的 Excel | Marvis 桌面助手专属 Skill
+> 🎬 一键将剧本解析为结构化资产表 | 多 AI 助手通用 · Marvis / Cursor / Copilot / Codex
 
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Stars](https://gitee.com/white-clad-er-zhuzi/script-asset-tool/badge/star.svg)](https://gitee.com/white-clad-er-zhuzi/script-asset-tool)
@@ -35,12 +35,13 @@
 
 ## 🚀 使用方法
 
-1. 将 `剧本资产表生成流程.md` 部署到 Marvis 桌面助手
-2. 发送剧本文件 + 指令：
+将`剧本资产表生成流程.md`的内容作为系统提示词提供给任意 AI 编程助手（Marvis / Cursor / Claude Code / GitHub Copilot / Codex CLI / Windsurf 等），然后发送剧本文件 + 指令：
 
 ```
-按资产表流程，处理这份剧本，第1集到最后
+处理这份剧本，从第17集开始，按资产表流程生成 Excel
 ```
+
+> 支持 Marvis 用户直接说"按资产表流程"快捷触发。
 
 支持输入格式：**PDF / Word / Excel**，支持指定集数范围。
 
@@ -74,9 +75,18 @@
 
 ---
 
-## 📣 关于 Marvis
+## 📣 支持的 AI 助手
 
-本 Skill 运行于 [Marvis 桌面助手](https://marvis.tencent.com)，一个支持 Windows 本地 AI 操作的工作台。
+| 平台 | 状态 |
+|------|------|
+| **Marvis** | ✅ 原生支持，说"按资产表流程"即可触发 |
+| **Cursor** | ✅ 将 Skill 文档作为 `.cursorrules` 或直接粘贴 |
+| **Claude Code** | ✅ 通过 CLAUDE.md 引用或直接粘贴 |
+| **GitHub Copilot** | ✅ 通过 `.github/copilot-instructions.md` 引用 |
+| **Codex CLI** | ✅ 粘贴到项目上下文 |
+| **Windsurf** | ✅ 通过 `.windsurfrules` 引用 |
+
+> 核心原则：只要 AI 助手能执行 Python 代码（含 openpyxl），就能用这个 Skill。
 
 ---
 
@@ -84,4 +94,4 @@
 
 如果你觉得有用，点个 Star 支持一下～
 
-[![Star History Chart](https://api.star-history.com/svg?repos=white-clad-er-zhuzi/script-asset-tool&type=Date)](https://star-history.com/#white-clad-er-zhuzi/script-asset-tool&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=white-clad-er-zhuzi/script-asset-tool,1317391973-svg/script-asset-tool&type=Date)](https://star-history.com/#white-clad-er-zhuzi/script-asset-tool&1317391973-svg/script-asset-tool&Date)
